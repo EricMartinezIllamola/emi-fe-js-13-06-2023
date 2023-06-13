@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ejercicio7.css">
+</head>
+<body>
+    <form method="post" name="formulario" onclick="return validation()">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" class="nombre" name="nombre" onkeyup="validarNombre()">
+            <div class="error" id="errorNombre"></div>
+        </div>
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" class="apellidos" name="apellidos" onkeyup="validarApellidos()">
+            <div class="error" id="errorApellidos"></div>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="email" name="email" onkeyup="validarEmail()">
+            <div class="error" id="errorEmail"></div>
+        </div>
+        <input type="button" value="Enviar">
+    </form>
+    <script src="../js/ejercicio7.js"></script>
+</body>
+</html>
