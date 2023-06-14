@@ -1,7 +1,11 @@
-document.getElementsByTagName("button")[0].addEventListener("click", mostrar);
+let boton = document.getElementsByTagName("button")[0];
+let parrafo = document.getElementsByTagName("p")[0];
+let selector = document.getElementById("selector");
+
+boton.addEventListener("click", mostrar);
 
 function mostrar() {
-    document.getElementsByTagName("p")[0].innerHTML = document.body.selector.options[e.selectedIndex].text;
+    let value = selector.value;
+    let text = selector.options[selector.selectedIndex].text;
+    parrafo.innerHTML = text;
 }
-
-let e = document.body.selector

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+.container {
+    height: 100vh;
+}
+
+.superior {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inferior {
+    height: 30%;
+    display: flex;
+}
+
+.grande {
+    height: 400px;
+    width: 600px;
+    background-image: url(../img/perro.jfif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.miniatura {
+    height: 100%;
+    width: 33%;
+}
+
+#miniatura1 {
+    background-image: url(../img/gato.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#miniatura2 {
+    background-image: url(../img/pajaro.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#miniatura3 {
+    background-image: url(../img/rana.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

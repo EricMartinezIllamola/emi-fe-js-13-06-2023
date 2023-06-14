@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ejercicioB.3.css">
+</head>
+
+<body>
+    <form method="post" name="formulario" onsubmit="return validation()">
+        <div class="row">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" class="nombre" name="nombre" placeholder="Pepe" 
+            minlength="2" maxlength="30" required pattern="[a-zA-Z\s]+">
+            <div class="error" id="errorNombre"></div>
+        </div>
+        <div class="row">
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="email" name="email" placeholder="pepe91@gmail.com">
+            <div class="error" id="errorEmail"></div>
+        </div>
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+    <script src="../js/ejercicioB.4.js"></script>
+</body>
+
+</html>
