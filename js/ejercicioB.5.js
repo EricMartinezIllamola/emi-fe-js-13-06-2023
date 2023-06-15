@@ -1,15 +1,24 @@
 $("#miniatura1").click(cambiarImagen1);
-// $("#miniatura2").click(cambiarImagen2);
-// $("#miniatura3").click(cambiarImagen3);
-
-// function cambiarImagen1() {
-//     let temporal = $("#grande").style.background();
-//     $("#grande").style.background() = $("#miniatura").style.background();
-//     $("#miniatura1").style.background() = temporal;
-// }
+$("#miniatura2").click(cambiarImagen2);
+$("#miniatura3").click(cambiarImagen3);
 
 function cambiarImagen1() {
-    let grande = $("#grande").css("backgroundImage");
-    console.log(grande);
-    let miniatura = $("#miniatura1").css("background-image");
+    let big = $("#grande").css("backgroundImage");
+    let small = $("#miniatura1").css("backgroundImage");
+    $("#grande").css("backgroundImage", small);
+    $("#miniatura1").css("backgroundImage", big);
+}
+
+function cambiarImagen2() {
+    let big = $("#grande").css("backgroundImage");
+    let small = $("#miniatura2").css("backgroundImage");
+    $("#grande").css("backgroundImage", small);
+    $("#miniatura2").css("backgroundImage", big);
+}
+
+function cambiarImagen3() {
+    let big = $("#grande").css("backgroundImage");
+    let small = $("#miniatura3").css("backgroundImage");
+    $("#grande").css("backgroundImage", small);
+    $("#miniatura3").css("backgroundImage", big);
 }
